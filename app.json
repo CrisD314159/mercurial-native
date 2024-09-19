@@ -13,13 +13,19 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cris314159.mercurialnative"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/mercurial.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.READ_CALENDAR",
+        "android.permission.WRITE_CALENDAR"
+      ],
+      "package": "com.cris314159.mercurialnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,6 +40,14 @@
           "remindersPermission": "The app needs to access your reminders."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2fc319d4-c6e2-445f-8479-5f8218189211"
+      }
+    }
   }
 }
